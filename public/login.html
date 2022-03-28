@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+        <style>
+            body{
+                margin: 10% 30% 25px 35%;
+                background-color: rgb(196, 212, 226);
+            }
+            div{
+                background-color:rgb(121, 165, 206) ;
+                width: 225px;
+                box-shadow: 10px 10px 8px 10px gray;
+                padding:50px;
+                margin: 20px;
+                border-radius: 25px;
+
+            }
+            input[type=text],[type=password]{
+                padding: 10px 22px;
+                border-radius: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Login</h1>
+        <form action="/loginto" method="post">
+            <input type="text" placeholder="Enter Username" name="username" required> <br>
+            <br>
+            <input type="password" placeholder="Enter Password" name="password" required> <br>
+            <br>
+            <button style="font-size:medium;margin-left: 50px;border-radius: 4px;padding: 8px 20px;">Login</button>
+        </form>
+        Not a Registered User? <a href="/register">Register</a>
+        </div>
+    </body>
+</html>

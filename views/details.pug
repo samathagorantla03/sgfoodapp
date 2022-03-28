@@ -1,0 +1,35 @@
+html 
+    head
+        style.  
+                .d
+                {
+                    border:2px solid black;
+                    background-color:rgb(121, 165, 206) ;
+                    width: 225px;
+                    box-shadow: 10px 10px 8px 10px gray;
+                    padding:50px;
+                    margin: 20px;
+                    border-radius: 25px;
+                    margin-left:35%;
+                }
+                p
+                {
+                color:black;
+                font-weight:bold;
+                }
+    body(style="background-color:rgb(196, 212, 226);") 
+    each val,i in data
+            if(i==id)
+                div(width="100px" heigth="100px" border="1px"  class="d")
+                    img(src=val.image width="100px")
+                    p="Itemname:"+ " " + val.name
+                    p="Serves:" + " " + val.serves
+                    p="Price:" + " " + val.price 
+                    p="Remarks:" + " " + val.remarks
+                    p="Location:" + " " + val.location
+                    p="Delivery:" + " " + val.delivery
+                    a(href="/placeorder/"+val.name) 
+                        button BuyNow
+                    i &nbsp;&nbsp;
+                    a(href="/home")
+                        button(class="btn") Home
