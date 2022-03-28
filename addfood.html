@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 1% 30% 25px 35%;
+                background-color: rgb(196, 212, 226);
+            }
+            div{
+                background-color:rgb(121, 165, 206) ;
+                width: 250px;
+                box-shadow: 10px 10px 8px 10px gray;
+                padding:50px;
+                margin: 20px;
+                border-radius: 25px;
+
+            }
+            input[type=text],[type=password]{
+                padding: 10px 22px;
+                border-radius: 4px;
+            }
+            .btn{
+                    font-size:Large;
+                    font-weight:bold;
+                    font-family:"Serif";
+                    background-color:rgb(121, 165, 206);
+                    text-align:center;
+                    border:none;
+                    margin-left: 0%;
+                }
+        </style>
+    </head>
+    <body>
+        <a href="/home"><button class="btn">Home</button> </a>
+        <div>
+            <h1>Item Details</h1>
+        <form action="/addfood" method="post" enctype="multipart/form-data">
+            Name of the Food : <input type="text" name="foodname" placeholder="Enter Food Item Name"> <br>
+            Serves : <input type="text" name="serves" placeholder="Enter amount of Serves"> <br>
+            Price : <input type="text" name="price" placeholder="Enter price"> <br>
+            Remarks : <input type="text" name="remarks" placeholder="Enter Remarks"> <br>
+            Location : <input type="text" name="location" placeholder="Enter Location"> <br>
+            Delivery Type : <br> <input type="radio" name="delivery" value="takeaway">
+                        <label for="html">Take Away</label><br>
+                    <input type="radio" name="delivery" value="homedelivery">
+                        <label for="css">Home Delivery</label><br>
+            FoodImage : <input type="file" placeholder="Upload Food Image" name="foodpic">
+            <button>Add</button>
+        </form>
+    </div>
+    </body>
+</html>
